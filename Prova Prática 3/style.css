@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+  background-color: #f0f0f5;      /* Cor de fundo clara, levemente azulada */
+  color: #333;                   /* Cor do texto padrão */
+  min-height: 100vh;             /* Altura mínima de 100% da tela */
+  display: flex;                 /* Usa flexbox para o layout do corpo */
+  flex-direction: column;        /* Itens dispostos em coluna (vertical) */
+  align-items: center;           /* Centraliza itens horizontalmente */
+  justify-content: center;       /* Centraliza itens verticalmente */
+  margin: 0;                     /* Remove margens padrão */
+}
+
+header {
+  background-color: #4CAF50;     /* Fundo verde */
+  color: white;                  /* Texto branco */
+  padding: 20px;                 /* Espaçamento interno */
+  text-align: center;            /* Texto centralizado */
+  width: 100%;                   /* Largura total do contêiner */
+}
+
+main {
+  background-color: #fff;        /* Fundo branco para o conteúdo principal */
+  padding: 30px;                 /* Espaçamento interno */
+  border-radius: 10px;           /* Cantos arredondados */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+  width: 90%;                   /* Ocupa 90% da largura disponível */
+  max-width: 400px;             /* Máximo de 400px de largura */
+  text-align: center;           /* Centraliza o texto dentro */
+}
+
+#valor-contador {
+  font-size: 48px;               /* Texto grande para destaque */
+  font-weight: bold;             /* Texto em negrito */
+  color: #4CAF50;                /* Cor verde para combinar com o tema */
+  margin-bottom: 20px;           /* Espaço abaixo do contador */
+}
+
+.botoes-controle {
+  display: flex;                 /* Flexbox para alinhar botões */
+  justify-content: center;       /* Centraliza botões horizontalmente */
+  gap: 10px;                    /* Espaçamento entre os botões */
+  flex-wrap: wrap;              /* Permite que os botões quebrem linha se necessário */
+}
+
+button {
+  padding: 10px 20px;            /* Espaçamento interno nos botões */
+  font-size: 16px;               /* Tamanho da fonte dos botões */
+  border: none;                  /* Remove bordas padrão */
+  border-radius: 6px;            /* Cantos arredondados nos botões */
+  cursor: pointer;               /* Cursor de mãozinha ao passar o mouse */
+  transition: background-color 0.3s ease; /* Animação suave na mudança de cor */
+}
+
+/* Botão incrementar */
+#incrementar-btn {
+  background-color: #4CAF50;     /* Verde */
+  color: white;                  /* Texto branco */
+}
+
+#incrementar-btn:hover {
+  background-color: #45a049;     /* Verde mais escuro ao passar o mouse */
+}
+
+/* Botão decrementar */
+#decrementar-btn {
+  background-color: #f44336;     /* Vermelho */
+  color: white;                  /* Texto branco */
+}
+
+#decrementar-btn:hover {
+  background-color: #d32f2f;     /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Botão resetar */
+#resetar-btn {
+  background-color: #2196F3;     /* Azul */
+  color: white;                  /* Texto branco */
+}
+
+#resetar-btn:hover {
+  background-color: #1976D2;     /* Azul mais escuro ao passar o mouse */
+}
+
+footer {
+  text-align: center;            /* Texto centralizado */
+  color: #777;                   /* Cor cinza para o texto do rodapé */
+  padding-top: 20px;             /* Espaçamento acima do rodapé */
+}
+
+/* Responsividade para telas pequenas (até 480px) */
+@media (max-width: 480px) {
+  .botoes-controle {
+    flex-direction: column;      /* Botões empilhados verticalmente */
+  }
+
+  button {
+    width: 100%;                 /* Botões ocupam toda a largura disponível */
+  }
+}

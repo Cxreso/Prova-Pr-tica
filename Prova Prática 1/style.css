@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do texto */
+  background-color: #f2f2f2;      /* Cor de fundo clara para a página */
+  color: #333;                   /* Cor do texto padrão */
+  margin: 0;                     /* Remove margem padrão do body */
+  padding: 0;                    /* Remove padding padrão do body */
+  display: flex;                 /* Usa flexbox para o layout do corpo */
+  flex-direction: column;        /* Organiza itens verticalmente */
+  align-items: center;           /* Centraliza itens horizontalmente */
+  min-height: 100vh;             /* Altura mínima de 100% da viewport */
+}
+
+header {
+  background-color: #007bff;     /* Fundo azul */
+  color: white;                  /* Texto branco */
+  padding: 20px 0;               /* Espaçamento vertical */
+  text-align: center;            /* Texto centralizado */
+  width: 100%;                   /* Largura total */
+}
+
+main {
+  background-color: #fff;        /* Fundo branco para a área principal */
+  margin: 40px 20px;             /* Margem superior/inferior e lateral */
+  padding: 30px;                 /* Espaçamento interno */
+  border-radius: 10px;           /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;                  /* Largura máxima de 100% do contêiner */
+  max-width: 400px;             /* Largura máxima fixa para telas grandes */
+}
+
+.form-group {
+  margin-bottom: 20px;           /* Espaço abaixo de cada grupo de formulário */
+}
+
+label {
+  display: block;                /* Faz o label ocupar linha inteira */
+  margin-bottom: 5px;            /* Espaço abaixo do label */
+  font-weight: bold;             /* Texto em negrito */
+}
+
+input[type="number"],
+select {
+  width: 100%;                  /* Campos ocupam toda largura disponível */
+  padding: 10px;                /* Espaçamento interno */
+  border: 1px solid #ccc;       /* Borda cinza clara */
+  border-radius: 6px;           /* Cantos arredondados */
+  box-sizing: border-box;       /* Inclui padding e border na largura */
+}
+
+button#converter-btn {
+  background-color: #317842;    /* Fundo verde escuro */
+  color: white;                 /* Texto branco */
+  padding: 33px;                /* Espaçamento interno grande */
+  width: 100%;                 /* Botão ocupa toda a largura */
+  border: none;                 /* Remove bordas padrão */
+  border-radius: 6px;           /* Cantos arredondados */
+  font-size: 16px;              /* Tamanho da fonte */
+  cursor: pointer;              /* Cursor em forma de mão ao passar por cima */
+  transition: background-color 0.3s ease; /* Animação suave na cor do fundo */
+}
+
+button#converter-btn:hover {
+  background-color: #218838;    /* Fundo verde mais escuro ao passar o mouse */
+}
+
+#resultado {
+  margin-top: 20px;             /* Espaço acima do resultado */
+  padding: 12px;                /* Espaçamento interno */
+  background-color: #e2f0d9;   /* Fundo verde clarinho */
+  border-radius: 6px;           /* Cantos arredondados */
+  text-align: center;           /* Texto centralizado */
+  font-weight: bold;            /* Texto em negrito */
+  color: #155724;               /* Texto verde escuro */
+}
+
+#erro-mensagem {
+  margin-top: 10px;             /* Espaço acima da mensagem de erro */
+  padding: 12px;                /* Espaçamento interno */
+  background-color: #f8d7da;   /* Fundo vermelho clarinho */
+  color: #721c24;               /* Texto vermelho escuro */
+  border-radius: 6px;           /* Cantos arredondados */
+  text-align: center;           /* Texto centralizado */
+}
+
+footer {
+  text-align: center;           /* Texto centralizado */
+  padding: 15px;                /* Espaçamento interno */
+  color: #555;                  /* Cor do texto cinza escuro */
+  margin-top: auto;             /* Empurra o footer para baixo se possível */
+}
+
+/* Estilos responsivos para telas com largura máxima de 480px (celulares) */
+@media (max-width: 480px) {
+  main {
+    margin: 20px 10px;          /* Margem menor nas laterais e vertical */
+    padding: 20px;              /* Padding menor para economizar espaço */
+  }
+
+  button#converter-btn {
+    font-size: 14px;            /* Fonte menor no botão para melhor encaixe */
+  }
+}
+

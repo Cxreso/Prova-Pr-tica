@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial com alternativa sans-serif */
+  background-color: #f2f2f2; /* Cor de fundo cinza claro */
+  color: #333; /* Cor do texto (cinza escuro) */
+  display: flex; /* Usa Flexbox no body */
+  flex-direction: column; /* Os elementos filhos serão organizados em coluna */
+  align-items: center; /* Centraliza horizontalmente os elementos filhos */
+  padding: 20px; /* Espaçamento interno de 20px */
+}
+
+header {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Alinha o texto ao centro */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 600px; /* Limita a largura máxima a 600px */
+  border-radius: 8px 8px 0 0; /* Arredonda os cantos superiores */
+}
+
+
+main {
+  background-color: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno */
+  margin-top: 10px; /* Margem superior */
+  border-radius: 0 0 8px 8px; /* Arredonda os cantos inferiores */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve ao redor */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 600px; /* Largura máxima de 600px */
+}
+
+
+#adicionar-tarefa {
+  display: flex; /* Usa Flexbox para alinhar os elementos */
+  gap: 10px; /* Espaço de 10px entre os elementos */
+  margin-bottom: 20px; /* Espaço abaixo da seção */
+}
+
+
+#nova-tarefa {
+  flex: 1; /* Ocupa todo o espaço disponível */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 6px; /* Cantos arredondados */
+}
+
+
+#btn-adicionar {
+  padding: 10px 20px; /* Espaçamento interno vertical e horizontal */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remove a borda padrão */
+  border-radius: 6px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor tipo "mão" ao passar o mouse */
+  transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+
+#btn-adicionar:hover {
+  background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+
+#tarefas {
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove espaçamento interno */
+  margin: 0; /* Remove margens */
+}
+
+
+#tarefas li {
+  display: flex; /* Alinha o conteúdo com Flexbox */
+  justify-content: space-between; /* Espaço entre o texto e os botões */
+  align-items: center; /* Alinha verticalmente ao centro */
+  border-bottom: 1px solid #ddd; /* Linha separadora entre tarefas */
+  padding: 10px 0; /* Espaçamento vertical */
+}
+
+
+.tarefa-texto {
+  flex: 1; /* Ocupa o máximo de espaço possível */
+}
+
+
+.concluida {
+  text-decoration: line-through; /* Linha atravessando o texto */
+  color: #999; /* Cor cinza clara (mais apagada) */
+}
+
+
+.acoes {
+  display: flex; /* Flexbox para alinhar botões lado a lado */
+  gap: 8px; /* Espaço entre os botões */
+}
+
+
+.acoes button {
+  padding: 6px 12px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 6px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de "mão" */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+
+.acoes .btn-concluir {
+  background-color: #f5f829; /* Cor amarela */
+  color: white; /* Cor do texto branca */
+}
+
+.acoes .btn-concluir:hover {
+  background-color: #c8c818; /* Amarelo mais escuro ao passar o mouse */
+}
+
+
+.acoes .btn-remover {
+  background-color: #f44336; /* Cor vermelha */
+  color: white; /* Texto branco */
+}
+
+.acoes .btn-remover:hover {
+  background-color: #d32f2f; /* Vermelho mais escuro no hover */
+}
+
+
+.erro {
+  color: red; /* Cor vermelha */
+  margin-top: 10px; /* Margem superior */
+  display: none; /* Não visível por padrão */
+}
+
+
+footer {
+  margin-top: 20px; /* Espaço acima do rodapé */
+  color: #666; /* Cor cinza */
+  font-size: 0.9em; /* Tamanho de fonte menor */
+}
+
+
+@media (max-width: 600px) {
+  #adicionar-tarefa {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+  }
+
+  #btn-adicionar {
+    width: 100%; /* Botão ocupa a largura total */
+  }
+}
+
